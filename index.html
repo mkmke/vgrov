@@ -1,0 +1,328 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>VGRO Creative Moodboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* Concept: an editorial field-guide. Light, photo-led sections; brand colours appear as large flat blocks, yellow only where action happens. */
+:root{
+  --bg:#F1F6EE; --surface:#FFFFFF; --fg:#1A1A1A; --muted:#4A5046; --line:#DBE5D5; --accent:#1C7BC4;
+  --blue:#1C7BC4; --green:#58B52B; --sky:#0F95DB; --deep:#2E7D1E; --yellow:#FFD41F; --ink:#1A1A1A; --mist:#F1F6EE; --earth:#8A6A46; --ivory:#F7F5ED;
+  --display:'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif; --body:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0F150F;--surface:#172017;--fg:#EEF3EA;--muted:#A9B5A3;--line:#2A352A;--accent:#6DB8F0;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F150F;--surface:#172017;--fg:#EEF3EA;--muted:#A9B5A3;--line:#2A352A;--accent:#6DB8F0;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:18px;line-height:1.5;padding-inline:0;margin:0}
+a{color:inherit}
+h1,h2,h3,p{margin:0}
+h1,h2,h3,.d{font-family:var(--display);letter-spacing:-0.02em;text-wrap:balance}
+.wrap{max-width:1280px;margin-inline:auto;padding-inline:clamp(16px,4vw,48px)}
+.cap{font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.muted{color:var(--muted)}
+.fill{position:absolute;inset:0;width:100%;height:100%}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:12px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none}
+.logo b{font-family:var(--display);font-weight:800;font-size:26px;color:var(--accent);letter-spacing:-0.02em}
+.nav ul{display:flex;gap:6px 22px;list-style:none;margin:0;padding:0;flex-wrap:wrap;font-size:16px;font-weight:700}
+.nav a.l{text-decoration:none;padding:6px 2px}
+.nav a.l:hover{color:var(--accent)}
+
+/* hero */
+.hero{padding-block:clamp(40px,7vw,96px) clamp(32px,5vw,64px)}
+.hero h1{font-size:clamp(46px,9.2vw,128px);line-height:.93;font-weight:800;margin-top:20px}
+.hero h1 span{color:var(--accent)}
+.hero .row{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-end;justify-content:space-between;margin-top:32px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{display:inline-block;font-weight:700;font-size:16px;padding:8px 16px;border-radius:999px;background:var(--surface);border:1px solid var(--line)}
+.hero-art{position:relative;margin-top:clamp(28px,4vw,48px);border-radius:32px;overflow:hidden;aspect-ratio:21/8;min-height:220px;background:#D6ECF8}
+.hero-art .tag{position:absolute;left:16px;bottom:16px;background:#fff;color:#1A1A1A;font-weight:700;font-size:15px;padding:6px 14px;border-radius:999px}
+
+section{padding-block:clamp(48px,7vw,104px);border-top:1px solid var(--line)}
+.sec-head{display:flex;flex-wrap:wrap;gap:16px 40px;align-items:flex-end;justify-content:space-between;margin-bottom:clamp(28px,4vw,48px)}
+.sec-head h2{font-size:clamp(36px,5.6vw,76px);line-height:.96;font-weight:800;max-width:14ch}
+.sec-head h2 span{color:var(--accent)}
+.sec-head p{max-width:34ch;color:var(--muted);font-size:19px}
+.eyebrow{color:var(--deep);margin-bottom:12px}
+:root[data-theme="dark"] .eyebrow{color:var(--green)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .eyebrow{color:var(--green)}}
+.label{font-size:14px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+
+/* palette */
+.sw-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.sw{border-radius:24px;padding:22px;min-height:260px;display:flex;flex-direction:column;justify-content:space-between}
+.sw .k{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.sw h3{font-size:30px;font-weight:800;line-height:1}
+.sw .hex{font-weight:700;font-size:19px;margin:4px 0 8px}
+.sw p{font-size:16px;line-height:1.35}
+.bar{display:flex;height:64px;border-radius:16px;overflow:hidden;border:2px solid var(--line)}
+.bar i{display:block}
+.bal{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px);gap:20px;margin-top:28px;align-items:end}
+.sup{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:16px 20px;display:flex;gap:14px;align-items:center;font-size:16px;line-height:1.35}
+.sup i{display:block;width:44px;height:44px;border-radius:12px;flex:none}
+@media (max-width:820px){.bal{grid-template-columns:minmax(0,1fr)}}
+
+/* type + photo */
+.idgrid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px;margin-top:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:clamp(20px,3vw,32px)}
+.typecard{grid-column:span 5;display:flex;flex-direction:column;justify-content:space-between;gap:28px}
+.photo{position:relative;border-radius:28px;overflow:hidden;min-height:300px;background:#CFE6B9}
+.photo .tag{position:absolute;left:14px;bottom:14px;font-weight:700;font-size:15px;padding:6px 14px;border-radius:999px;background:#fff;color:#1A1A1A}
+.photo.y .tag{background:var(--yellow)}
+.p1{grid-column:span 4}.p2{grid-column:span 3}
+.mood{grid-column:span 12;background:var(--blue);color:#fff;border-radius:28px;padding:clamp(24px,4vw,40px);display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center;justify-content:space-between}
+.mood h3{font-size:clamp(28px,3.6vw,48px);line-height:1;font-weight:800;max-width:22ch}
+.mood .cap{color:var(--yellow)}
+.mood p{font-size:17px;max-width:28ch;color:#E3F0FA}
+@media (max-width:960px){.typecard,.p1,.p2{grid-column:span 12}}
+@media (min-width:600px) and (max-width:960px){.p1,.p2{grid-column:span 6}}
+
+/* social */
+.social{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+@media (max-width:980px){.social{grid-template-columns:minmax(0,1fr)}.phone-wrap{max-width:380px;margin-inline:auto;width:100%}}
+.phone{border:8px solid #1A1A1A;border-radius:42px;overflow:hidden;background:#fff;color:#1A1A1A;outline:1px solid var(--line)}
+.prof{display:flex;gap:14px;align-items:center;padding:16px 16px 10px}
+.av{width:60px;height:60px;border-radius:50%;background:#F1F6EE;border:3px solid #58B52B;display:flex;align-items:center;justify-content:center;flex:none}
+.hl{display:flex;gap:14px;padding:4px 16px 12px}
+.hl div{text-align:center;font-size:13px;font-weight:700}
+.hl i{display:block;width:46px;height:46px;border-radius:50%;margin-bottom:2px}
+.ig{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px}
+.t{container-type:inline-size;position:relative;overflow:hidden;aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:flex-end;padding:8cqw;font-family:var(--display);font-weight:800;line-height:.98;letter-spacing:-0.02em}
+.t span.h{font-size:17cqw}
+.t .bub{display:block;height:16cqw;border-radius:8cqw 8cqw 2cqw 8cqw}
+.pack{display:block;border-radius:10px}
+.group{display:grid;gap:clamp(28px,4vw,44px)}
+.reels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:620px}
+.v{container-type:inline-size;position:relative;overflow:hidden;aspect-ratio:9/16;border-radius:18px}
+.v .h,.thumb .h,.ad .h{position:absolute;font-family:var(--display);font-weight:800;line-height:.98;letter-spacing:-0.02em}
+.v .h{left:7cqw;right:7cqw;top:8cqw;font-size:17cqw}
+.banner{container-type:inline-size;position:relative;overflow:hidden;border-radius:22px;aspect-ratio:6/1;min-height:150px;background:var(--blue);color:#fff}
+.banner .art{position:absolute;right:0;top:0;bottom:0;width:36%;background:#D6ECF8}
+.banner h3{position:absolute;left:4cqw;top:50%;transform:translateY(-50%);font-size:max(30px,6cqw);font-weight:800;line-height:1}
+.banner h3 span{color:var(--yellow)}
+.banner .sub{position:absolute;left:4cqw;bottom:12px;font-size:15px;font-weight:700}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.thumb{container-type:inline-size;position:relative;overflow:hidden;aspect-ratio:16/9;border-radius:16px}
+.thumb .h{left:5cqw;top:19cqw;font-size:13.5cqw;width:62cqw}
+.thumb .lg{position:absolute;left:5cqw;top:4cqw;font-family:var(--display);font-weight:800;font-size:5.4cqw}
+.pill{position:absolute;font-weight:700;background:var(--yellow);color:#1A1A1A;border-radius:999px}
+.thumb .pill{left:5cqw;bottom:5cqw;font-size:max(14px,4.4cqw);padding:.3em .8em}
+.shorts{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:14px}
+.themes{background:var(--ink);color:#fff;border-radius:22px;padding:20px 22px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.themes .cap{color:var(--yellow);width:100%}
+.themes span.c{font-weight:700;font-size:16px;padding:6px 14px;border-radius:999px}
+:root[data-theme="dark"] .themes{background:#050805;border:1px solid var(--line)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .themes{background:#050805;border:1px solid var(--line)}}
+
+/* ads */
+.ads{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.ad{container-type:inline-size;position:relative;overflow:hidden;aspect-ratio:4/5;border-radius:24px}
+.ad .lg{position:absolute;left:7cqw;top:6cqw;font-family:var(--display);font-weight:800;font-size:7cqw}
+.ad .h{left:7cqw;right:7cqw;top:19cqw;font-size:14cqw}
+.ad .cta{position:absolute;left:7cqw;bottom:7cqw;font-weight:700;font-size:6cqw;padding:3cqw 6.5cqw;border-radius:999px;background:var(--yellow);color:#1A1A1A;white-space:nowrap}
+.ad .b{position:absolute;left:7cqw;right:7cqw;font-size:6cqw;font-weight:500;padding:2.6cqw 4cqw;color:#1A1A1A}
+
+/* test to scale */
+.flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:20px}
+.step{border-radius:24px;padding:24px;background:var(--deep);color:#fff;display:flex;flex-direction:column;gap:14px;min-height:190px;justify-content:space-between}
+.step .n{width:44px;height:44px;border-radius:50%;background:#fff;color:#1A1A1A;font-family:var(--display);font-weight:800;font-size:22px;display:flex;align-items:center;justify-content:center}
+.step:first-child .n,.step:last-child .n{background:var(--yellow)}
+.step h3{font-size:30px;font-weight:800;line-height:1}
+.step p{font-size:16px;color:#DDEEDC;margin-top:6px}
+@media (max-width:900px){.flow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.flow{grid-template-columns:minmax(0,1fr)}}
+.scroll{overflow-x:auto;margin-top:20px;border-radius:20px}
+table{border-collapse:separate;border-spacing:8px;width:100%;min-width:760px;font-size:17px}
+th{background:var(--blue);color:#fff;text-align:left;padding:10px 18px;border-radius:12px;font-weight:700}
+td{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+td.o{font-family:var(--display);font-weight:800;font-size:20px;border:0;color:#1A1A1A}
+.note{margin-top:12px;color:var(--muted);font-size:16px}
+
+footer{border-top:1px solid var(--line);padding-block:40px 56px;color:var(--muted);font-size:16px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 40px;justify-content:space-between}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="field" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice"><rect width="800" height="500" fill="#D6ECF8"/><circle cx="590" cy="120" r="46" fill="#FFD41F"/><path d="M0 262 Q150 200 300 250 T600 240 T800 230 V300 H0Z" fill="#2E7D1E" opacity=".5"/><rect y="262" width="800" height="240" fill="#58B52B"/><g stroke="#2E7D1E" stroke-width="7" opacity=".5" fill="none"><path d="M400 262L-300 500"/><path d="M400 262L-80 500"/><path d="M400 262L150 500"/><path d="M400 262L400 500"/><path d="M400 262L650 500"/><path d="M400 262L880 500"/><path d="M400 262L1100 500"/></g></symbol>
+<symbol id="crops" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice"><rect width="400" height="500" fill="#CFE6B9"/><g fill="#58B52B"><path d="M60 500C60 380 80 300 140 220c40 60 30 160 0 280Z"/><path d="M180 500C170 360 200 260 270 170c50 70 30 200-10 330Z"/><path d="M290 500C290 400 320 330 370 270c20 80 0 160-20 230Z"/></g><rect y="452" width="400" height="48" fill="#8A6A46"/></symbol>
+<symbol id="leaf" viewBox="0 0 28 28"><path d="M14 26V12" stroke="#58B52B" stroke-width="3" stroke-linecap="round" fill="none"/><path d="M14 14C14 7 9 4 3 4c0 6 3 10 11 10Z" fill="#58B52B"/><path d="M14 11c0-5 4-8 11-8 0 6-4 9-11 9Z" fill="#1C7BC4"/></symbol>
+<symbol id="person" viewBox="0 0 150 267"><circle cx="75" cy="150" r="30" fill="#F1F6EE"/><path d="M10 267C10 210 38 182 75 182s65 28 65 85Z" fill="#F1F6EE"/></symbol>
+</defs>
+</svg>
+
+<header class="nav">
+<div class="wrap">
+<a class="logo" href="#top" aria-label="VGRO home"><svg width="30" height="30" aria-hidden="true"><use href="#leaf" width="30" height="30"/></svg><b>VGRO</b></a>
+<nav aria-label="Sections"><ul>
+<li><a class="l" href="#identity">Identity</a></li>
+<li><a class="l" href="#social">Social</a></li>
+<li><a class="l" href="#ads">Ads</a></li>
+<li><a class="l" href="#testing">Testing</a></li>
+</ul></nav>
+</div>
+</header>
+
+<main id="top">
+
+<div class="hero wrap">
+<div class="cap eyebrow">VGRO / FARMAI INDIA · Creative moodboard</div>
+<h1>Rooted in the field. <span>Built for what’s next.</span></h1>
+<div class="row">
+<p class="muted" style="max-width:36ch;font-size:21px">How the website, Instagram, YouTube and ads could look and feel.</p>
+<div class="chips"><span class="chip">Modern</span><span class="chip">Agricultural</span><span class="chip">Trustworthy</span><span class="chip">Premium</span><span class="chip">Tech-enabled</span></div>
+</div>
+<div class="hero-art"><svg class="fill" aria-hidden="true"><use href="#field" width="100%" height="100%"/></svg><span class="tag">Photo direction · wide fields, natural light</span></div>
+</div>
+
+<!-- IDENTITY -->
+<section id="identity"><div class="wrap">
+<div class="sec-head"><div><div class="cap eyebrow">01 · Visual identity &amp; website direction</div><h2>Blue leads. Green grows. <span>Yellow acts.</span></h2></div><p>Light, open and photo-led. One clear action per screen.</p></div>
+
+<div class="sw-grid">
+<div class="sw" style="background:var(--blue);color:#fff"><span class="k" style="color:var(--yellow)">Lead</span><div><h3 class="d">VGRO Blue</h3><div class="hex">#1C7BC4</div><p>Trust, navigation, key headings</p></div></div>
+<div class="sw" style="background:var(--green);color:#1A1A1A"><span class="k">Growth</span><div><h3 class="d">Paddy Green</h3><div class="hex">#58B52B</div><p>Farming imagery, accents</p></div></div>
+<div class="sw" style="background:var(--sky);color:#1A1A1A"><span class="k">Digital</span><div><h3 class="d">Sky Blue</h3><div class="hex">#0F95DB</div><p>AI and tech sections</p></div></div>
+<div class="sw" style="background:var(--deep);color:#fff"><span class="k" style="color:var(--yellow)">Depth</span><div><h3 class="d">Deep Paddy</h3><div class="hex">#2E7D1E</div><p>Contrast, agricultural emphasis</p></div></div>
+<div class="sw" style="background:var(--yellow);color:#1A1A1A"><span class="k">Action</span><div><h3 class="d">Signal Yellow</h3><div class="hex">#FFD41F</div><p>Buttons and sharp highlights</p></div></div>
+<div class="sw" style="background:#1A1A1A;color:#fff;border:1px solid var(--line)"><span class="k" style="color:var(--yellow)">Type</span><div><h3 class="d">Ink</h3><div class="hex">#1A1A1A</div><p>Text and strong contrast</p></div></div>
+<div class="sw" style="background:#F1F6EE;color:#1A1A1A;border:1px solid #DBE5D5"><span class="k" style="color:#2E7D1E">Space</span><div><h3 class="d">Mist</h3><div class="hex">#F1F6EE + white</div><p>Backgrounds, product layouts</p></div></div>
+</div>
+
+<div class="bal">
+<div>
+<div class="label">Colour balance</div>
+<div class="bar" role="img" aria-label="Colour balance: mostly white and Mist, then Blue, Green, Deep Paddy, Ink, Sky Blue and Yellow"><i style="flex:48;background:#fff"></i><i style="flex:18;background:#1C7BC4"></i><i style="flex:12;background:#58B52B"></i><i style="flex:8;background:#2E7D1E"></i><i style="flex:7;background:#1A1A1A"></i><i style="flex:4;background:#0F95DB"></i><i style="flex:3;background:#FFD41F"></i></div>
+<p class="note">Mostly light. Blue leads. Yellow only where action happens.</p>
+</div>
+<div class="sup"><i style="background:var(--earth)"></i><i style="background:var(--ivory);border:2px solid var(--line)"></i><div><b>Supporting, proposed</b><br>Earth Brown #8A6A46 · Warm Ivory #F7F5ED</div></div>
+</div>
+
+<div class="idgrid">
+<div class="card typecard">
+<div class="label" style="margin:0">Typography</div>
+<div style="display:flex;align-items:flex-end;gap:20px"><span class="d" style="font-size:clamp(100px,14vw,170px);line-height:.85;font-weight:800;color:var(--accent)">Aa</span><span style="font-size:clamp(56px,8vw,96px);line-height:.85;font-weight:500">Aa</span></div>
+<div><div class="d" style="font-size:32px;font-weight:800;line-height:1">Bricolage Grotesque</div><div class="muted" style="font-size:17px;margin-bottom:12px">Headlines · bold and confident</div><div style="font-size:26px;font-weight:700">DM Sans</div><div class="muted" style="font-size:17px">Body and interface · clean and friendly</div></div>
+</div>
+<div class="photo p1"><svg class="fill" aria-hidden="true"><use href="#field" width="100%" height="100%"/></svg><span class="tag">Wide fields · golden light</span></div>
+<div class="photo p2 y"><svg class="fill" aria-hidden="true"><use href="#crops" width="100%" height="100%"/></svg><span class="tag">Close crops · real soil</span></div>
+<div class="mood"><div><div class="cap">Website mood</div><h3 class="d" style="margin-top:10px">Open, light, photo-led. One clear action per screen.</h3></div><p>Direction only. The sample website is being built separately.</p></div>
+</div>
+</div></section>
+
+<!-- SOCIAL -->
+<section id="social"><div class="wrap">
+<div class="sec-head"><div><div class="cap eyebrow">02 · Social media</div><h2>One brand. <span>Every feed.</span></h2></div><p>Each post has its own job. All of them are unmistakably VGRO.</p></div>
+
+<div class="social">
+<div class="phone-wrap">
+<div class="label">Instagram profile</div>
+<div class="phone">
+<div class="prof"><div class="av"><svg width="30" height="30" aria-hidden="true"><use href="#leaf" width="30" height="30"/></svg></div><div><div style="font-weight:700;font-size:19px">[vgro handle]</div><div style="font-size:15px;color:#4A5046;line-height:1.3">Products · Farming projects · Consulting · Farm AI</div></div></div>
+<div class="hl"><div><i style="background:#58B52B"></i>Learn</div><div><i style="background:#1C7BC4"></i>Shop</div><div><i style="background:#2E7D1E"></i>Projects</div><div><i style="background:#0F95DB"></i>Farm AI</div></div>
+<div class="ig">
+<div class="t" style="background:#F1F6EE;justify-content:space-between"><i style="display:block;width:24cqw;height:4cqw;background:#1C7BC4;border-radius:2cqw"></i><span class="h">Soil 101</span></div>
+<div class="t" style="background:#fff;align-items:center;justify-content:center"><i class="pack" style="width:42cqw;height:64cqw;background:#58B52B"></i></div>
+<div class="t" style="padding:0"><svg class="fill" aria-hidden="true"><use href="#field" width="100%" height="100%"/></svg></div>
+<div class="t" style="background:#2E7D1E;color:#fff"><svg class="fill" viewBox="0 0 150 267" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#person" width="150" height="267"/></svg><span style="position:absolute;left:8cqw;top:8cqw;background:#FFD41F;color:#1A1A1A;font-size:11cqw;padding:1cqw 5cqw;border-radius:99px;line-height:1.3">Reel</span><span class="h" style="position:relative;width:60cqw">Why I farm</span></div>
+<div class="t" style="background:#1C7BC4;color:#fff"><span class="h" style="font-size:16cqw">Your land. Our project.</span></div>
+<div class="t" style="background:#0F95DB;gap:2.5cqw"><i class="bub" style="align-self:flex-end;width:48cqw;background:#FFD41F"></i><i class="bub" style="align-self:flex-start;width:62cqw;background:#fff;border-radius:8cqw 8cqw 8cqw 2cqw"></i></div>
+<div class="t" style="background:#2E7D1E;color:#fff;justify-content:space-between"><i style="display:block;width:24cqw;height:4cqw;background:#FFD41F;border-radius:2cqw"></i><span class="h">Crop basics</span></div>
+<div class="t" style="padding:0"><svg class="fill" aria-hidden="true"><use href="#crops" width="100%" height="100%"/></svg></div>
+<div class="t" style="background:#F1F6EE;align-items:center;justify-content:center"><i class="pack" style="width:42cqw;height:64cqw;background:#1C7BC4"></i></div>
+<div class="t" style="background:#1A1A1A;color:#FFD41F"><span class="h" style="font-size:16cqw">Ask an expert.</span></div>
+<div class="t" style="background:#8A6A46;color:#fff"><span class="h" style="font-size:16cqw">From the soil up.</span></div>
+<div class="t" style="background:#fff;color:#1C7BC4;justify-content:space-between;border:1px solid #DBE5D5"><i style="display:block;width:20cqw;height:20cqw;border-radius:50%;background:#0F95DB"></i><span class="h" style="font-size:15cqw">Chat with the farm AI.</span></div>
+</div>
+</div>
+</div>
+
+<div class="group">
+<div>
+<div class="label">Reel covers · 9:16</div>
+<div class="reels">
+<div class="v" style="background:#2E7D1E"><svg class="fill" viewBox="0 0 150 267" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#person" width="150" height="267"/></svg><span class="h" style="background:#FFD41F;color:#1A1A1A;padding:1cqw 3cqw;font-size:15cqw">Before I started farming</span></div>
+<div class="v" style="background:#1C7BC4;color:#fff"><span class="h">Bare land to harvest.</span><i style="position:absolute;left:7cqw;right:7cqw;bottom:7cqw;height:32%;background:#58B52B;border-radius:12px"></i></div>
+<div class="v" style="background:#0F95DB;color:#1A1A1A"><span class="h">Send a photo. Get answers.</span><i style="position:absolute;right:7cqw;bottom:32cqw;width:52cqw;height:15cqw;background:#FFD41F;border-radius:6cqw 6cqw 1cqw 6cqw"></i><i style="position:absolute;left:7cqw;bottom:12cqw;width:66cqw;height:15cqw;background:#fff;border-radius:6cqw 6cqw 6cqw 1cqw"></i></div>
+</div>
+</div>
+
+<div>
+<div class="label">YouTube channel banner</div>
+<div class="banner"><div class="art"><svg class="fill" aria-hidden="true"><use href="#field" width="100%" height="100%"/></svg></div><h3 class="d">Farming, <span>explained.</span></h3><div class="sub">Education · Demos · Projects · Farm AI</div></div>
+</div>
+
+<div>
+<div class="label">Video thumbnails · 16:9</div>
+<div class="thumbs">
+<div class="thumb" style="background:#fff;border:2px solid var(--line);color:#1A1A1A"><i style="position:absolute;right:0;top:0;bottom:0;width:28%;background:#58B52B"></i><span class="lg" style="color:#1C7BC4">VGRO</span><span class="h">SOIL,<br><span style="color:#1C7BC4">explained.</span></span><span class="pill">Education</span></div>
+<div class="thumb" style="background:#2E7D1E;color:#fff"><i style="position:absolute;right:8cqw;bottom:0;width:26cqw;height:60%;background:#58B52B;border-radius:16px 16px 0 0"></i><span class="lg">VGRO</span><span class="h" style="width:55cqw">[Product] <span style="color:#FFD41F">in action.</span></span><span class="pill">Product demo</span></div>
+<div class="thumb" style="background:#1C7BC4;color:#fff"><i style="position:absolute;right:0;top:0;bottom:0;width:34%;background:#D6ECF8"></i><i style="position:absolute;right:0;bottom:0;width:34%;height:44%;background:#58B52B"></i><span class="lg">VGRO</span><span class="h" style="width:58cqw">Inside a <span style="color:#FFD41F">farm project.</span></span><span class="pill">Walkthrough</span></div>
+</div>
+</div>
+
+<div>
+<div class="label">Shorts covers · 9:16</div>
+<div class="shorts">
+<div class="v" style="background:#2E7D1E;color:#fff"><svg class="fill" viewBox="0 0 150 267" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#person" width="150" height="267"/></svg><span class="h" style="font-size:16cqw">One lesson I learned.</span></div>
+<div class="v" style="background:#0F95DB;color:#1A1A1A"><span class="h" style="font-size:16cqw">Farm AI on WhatsApp.</span><i style="position:absolute;left:7cqw;bottom:7cqw;width:60cqw;height:16cqw;background:#FFD41F;border-radius:99px"></i></div>
+<div class="v" style="background:#58B52B;color:#1A1A1A"><span class="h" style="font-size:16cqw">[Product] in 30 seconds.</span><i style="position:absolute;left:50%;margin-left:-14cqw;bottom:9cqw;width:28cqw;height:42cqw;background:#fff;border-radius:12px"></i></div>
+<div class="v" style="background:#F1F6EE;color:#1A1A1A;border:2px solid #DBE5D5"><i style="position:absolute;left:7cqw;top:7cqw;width:20cqw;height:3cqw;background:#1C7BC4;border-radius:2cqw"></i><span class="h" style="top:16cqw;font-size:16cqw">Quick tip: watering.</span></div>
+</div>
+</div>
+
+<div class="themes"><span class="cap">Content themes</span><span class="c" style="background:#58B52B;color:#1A1A1A">Education</span><span class="c" style="background:#fff;color:#1A1A1A">Product demos</span><span class="c" style="background:#2E7D1E">Project walkthroughs</span><span class="c" style="background:#1C7BC4">Founder insights</span><span class="c" style="background:#0F95DB;color:#1A1A1A">WhatsApp AI</span></div>
+</div>
+</div>
+</div></section>
+
+<!-- ADS -->
+<section id="ads"><div class="wrap">
+<div class="sec-head"><div><div class="cap eyebrow">03 · Advertising creative</div><h2>Four offers. <span>Four looks.</span></h2></div><p>Short headlines, one image idea, one clear action.</p></div>
+<div class="ads">
+<div><div class="label">Products · Discovery</div>
+<div class="ad" style="background:#fff;border:2px solid var(--line)"><i style="position:absolute;left:50%;top:7cqw;width:62cqw;height:62cqw;margin-left:-31cqw;border-radius:50%;background:#F1F6EE"></i><i style="position:absolute;left:50%;top:13cqw;width:30cqw;height:48cqw;margin-left:-15cqw;border-radius:14px;background:#58B52B;display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:800;font-size:7cqw;font-style:normal;color:#1A1A1A">VGRO</i><span class="h" style="left:7cqw;right:7cqw;top:auto;bottom:25cqw;font-size:11cqw;color:#1A1A1A">[Product name]</span><span style="position:absolute;left:7cqw;bottom:19cqw;font-size:5.4cqw;color:#4A5046">[One-line benefit]</span><span class="cta">Shop now</span></div></div>
+<div><div class="label">Services · Enquiries</div>
+<div class="ad" style="background:#1C7BC4;color:#fff"><span class="lg">VGRO</span><span class="h">Your land. Our farming project.</span><div style="position:absolute;left:7cqw;right:7cqw;bottom:24cqw;height:26cqw;border-radius:16px;overflow:hidden"><svg class="fill" aria-hidden="true"><use href="#field" width="100%" height="100%"/></svg></div><span class="cta">Book a site visit</span></div></div>
+<div><div class="label">Consulting · Enquiries</div>
+<div class="ad" style="background:#8A6A46;color:#fff"><span class="lg">VGRO</span><span class="h">Get the right farming advice.</span><div style="position:absolute;left:7cqw;bottom:24cqw;display:flex;gap:2cqw"><span style="background:#F7F5ED;color:#1A1A1A;font-weight:700;font-size:4.6cqw;padding:1.2cqw 3.4cqw;border-radius:99px">[Topic]</span><span style="background:#F7F5ED;color:#1A1A1A;font-weight:700;font-size:4.6cqw;padding:1.2cqw 3.4cqw;border-radius:99px">[Topic]</span><span style="background:#F7F5ED;color:#1A1A1A;font-weight:700;font-size:4.6cqw;padding:1.2cqw 3.4cqw;border-radius:99px">[Topic]</span></div><span class="cta">Book a session</span></div></div>
+<div><div class="label">WhatsApp AI · Discovery</div>
+<div class="ad" style="background:#0F95DB;color:#1A1A1A"><span class="lg">VGRO</span><span class="h">Ask your farm anything.</span><span class="b" style="bottom:38cqw;background:#FFD41F;border-radius:5cqw 5cqw 1cqw 5cqw;left:auto;width:50cqw">[Photo of crop]</span><span class="b" style="bottom:25cqw;background:#fff;border-radius:5cqw 5cqw 5cqw 1cqw;right:auto;width:68cqw">[Answer from the assistant]</span><span class="cta" style="background:#1A1A1A;color:#FFD41F">Try on WhatsApp</span></div></div>
+</div>
+</div></section>
+
+<!-- TESTING -->
+<section id="testing"><div class="wrap">
+<div class="sec-head"><div><div class="cap eyebrow">04 · Which platforms should we test?</div><h2>Test first. <span>Scale what works.</span></h2></div><p>Not every product earns an ad budget. Real results decide.</p></div>
+
+<div class="flow">
+<div class="step"><span class="n">1</span><div><h3 class="d">Test</h3><p>Small, controlled budgets for each offer</p></div></div>
+<div class="step"><span class="n">2</span><div><h3 class="d">Measure</h3><p>Cost per qualified enquiry or purchase, conversion rate, CPA</p></div></div>
+<div class="step"><span class="n">3</span><div><h3 class="d">Find winners</h3><p>Compare actual results, with revenue and profit where reliable</p></div></div>
+<div class="step"><span class="n">4</span><div><h3 class="d">Scale what works</h3><p>Invest more only where results hold up</p></div></div>
+</div>
+
+<div class="scroll" tabindex="0" role="region" aria-label="Platform test matrix">
+<table>
+<thead><tr><th style="background:none"></th><th>Meta Ads</th><th>Google Search Ads</th><th>YouTube</th></tr></thead>
+<tbody>
+<tr><td class="o" style="background:var(--green)">DIY products</td><td>Discovery and visual demos</td><td>Capture existing demand</td><td>Demos and education</td></tr>
+<tr><td class="o" style="background:var(--deep);color:#fff">Farming services</td><td>Explain and generate enquiries</td><td>Reach active searchers</td><td>Project walkthroughs</td></tr>
+<tr><td class="o" style="background:var(--earth);color:#fff">Consulting</td><td>Educational content and enquiries</td><td>High-intent searches</td><td>Show expertise</td></tr>
+<tr><td class="o" style="background:var(--sky)">WhatsApp AI</td><td>Show the concept</td><td>Test if demand exists</td><td>Shorts: how it could work</td></tr>
+</tbody>
+</table>
+</div>
+<p class="note">Initial hypotheses. No budgets or benchmarks are assumed.</p>
+</div></section>
+
+</main>
+
+<footer><div class="wrap"><div><b class="d" style="font-size:22px;color:var(--accent)">VGRO</b> / FARMAI INDIA · Creative moodboard</div><div>Illustrations are placeholders for real photography. Items in [brackets] are to be confirmed.</div></div></footer>
+
+</body></html>
